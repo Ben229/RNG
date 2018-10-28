@@ -3,10 +3,7 @@ function random() {
     var min = Number(document.getElementById('Min').value);
     var times = Number(document.getElementById('Times').value);
     var all = "";
-    if (times >= Infinity || min >= Infinity || max >= Infinity) {
-        return document.getElementById('result').innerHTML = 'JavaScript Can\'t handle this size of numbers.'
-    }
-    if (isNaN(max) || max == "" || isNaN(min)  || isNaN(times) || times == "" || min > max) {
+      if (isNaN(max) || max == "" || isNaN(min)  || isNaN(times) || times == "" || min > max) {
         return document.getElementById('result').innerHTML = 'Please enter a valid numbers  !';
     }
     for (let i = 0; i < times; i++ ) {
